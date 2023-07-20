@@ -1,0 +1,115 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Task Manager App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+                    
+        }
+        
+        .container::before {
+           content="";
+           background: url("https://images.pexels.com/photos/1226398/pexels-photo-1226398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+           background-repeat: no-repeat;
+           background-position: cover;
+           opacity: 0.6;
+           z-index: -2;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            max-width: 468px;
+            margin: 10px auto;
+            height: 100vh;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .paragraph {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .learned {
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+          display: inline-block;
+          text-decoration: none;
+          text-align: center;
+          color: #fff;
+          border: 1px #fff solid;
+          border-radius: 8px;
+          margin: 2rem auto;
+          padding: 10px 20px;
+        }
+        
+        .btn:hover,
+        .btn:active {
+          background: #fff;
+          color: #333;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="logo">Task Manager App 2.0</h2>
+    <p class="paragraph">This app is made by Aland Salam, and it took 4 Days. It has some older Versions:</p>
+    <ul>
+        <li>Version 1.0.0:</li>
+        <li>This is the basic version, with a basic design and functionality.</li>
+        <li>Version 1.1.0:</li>
+        <li>This is the second version of the app, with a different theme, placeholders, and bug fixes.</li>
+        <li>Version 1.1.1:</li>
+        <li>This is another version, with a different theme, added 410 placeholder texts using Typed.js, and emojis.</li>
+        <li>Version 2.0.0:</li>
+        <li>This is the current version.</li>
+        <li>I've added:</li>
+        <li>User Authentication, Via Email, Google Account</li>
+        <li>New Theme</li>
+        <li>Settings</li>
+        <li>Email Verification</li>
+        <li>Extra 200 placeholder texts</li>
+    </ul>
+
+    <p class="learned">During the process of making this app, I've learned:</p>
+    <ul>
+        <li>Firebase Realtime Database</li>
+        <li>Firebase Authentication</li>
+        <li>Working with Firebase API</li>
+        <li>CSS Variables</li>
+        <li>Basic CSS techniques</li>
+        <li>TypeScript</li>
+    </ul>
+
+    <a href="app.html" class="btn">Back <i class="fa-solid fa-person-walking-arrow-loop-left"></i></a>
+  </div>
+</body>
+</html>

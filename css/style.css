@@ -1,0 +1,140 @@
+/* :root {
+  --color-main: #8C8B8B;
+  --color-secondary: #7B6D5B;
+  --color-dark: #38312e;
+  --color-hilight: #6A4D3C;
+} */
+
+/* :root {
+  --color-main: #B8AFA0;
+  --color-secondary: #CFBEB6;
+  --color-dark: #262A2A;
+  --color-hilight: #773F4A; /* purplish/redish
+} */
+
+:root {
+  --color-main: #377AAF;
+  --color-secondary: #D8CCC0;
+  --color-dark: #38312e;
+  --color-hilight: #284062;
+}
+
+/* :root {
+  --color-main: #fff;
+  --color-secondary: #252525;
+  --color-dark: #252525;
+  --color-hilight: #742ff6;
+} */
+
+/* :root {
+  --color-main: #2BC1E2;
+  --color-secondary: #D5C7BC;
+  --color-dark: #2F3A33;
+  --color-hilight: #6D9270;
+  --color-second-hi: #3B9FD0;
+} */
+
+/* :root {
+  --color-main: #efe7e2;
+  --color-secondary: #CFBEB6;
+  --color-dark: #000;
+  --color-hilight: #af795d;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-hilight);
+  color: var(--color-dark);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 468px;
+  margin: 25px auto;
+  height: 100vh;
+  position: relative;
+  
+}
+
+.logo img {
+  width: 400px;
+  height: 400px;
+  
+}
+
+.signinTxt {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-dark);
+  padding: 20px;
+  border-radius: 8px;
+  
+}
+
+.input-element {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-dark);
+  color: white;
+  font-size: 16px;
+  transition: 0.3s ease-out;
+}
+
+.input-element:focus,
+.input-element:valid {
+  outline: none;
+  border-bottom: 1px solid var(--color-dark);
+}
+
+.signin-button-element {
+  width: 220px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--color-main);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signin-button-element:hover,
+.signin-button-element:active {
+  opacity: 0.7;
+}
+
+.othersTxt {
+  margin-top: 20px;
+  color: white;
+}
+
+.googleSignin {
+  display: block;
+  margin-top: 20px;
+  max-width: 100px;
+}
+
+.googleSignin:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

@@ -1,0 +1,102 @@
+/* settingsStyle.css */
+body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 568px;
+}
+
+.user-details {
+  margin: 0 auto;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.user-details p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.username,
+.email,
+.tel,
+.password,
+.password-confirm {
+  margin: 10px 0;
+  padding: 5px;
+  width: 200px;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-left: 3px solid green;
+  border-bottom: 3px solid green;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+}
+
+.change-data-btn,
+.change-password-btn,
+.delete-account-btn {
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+}
+
+.delete-account-btn:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul { list-style: none; }
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: red 1px solid;
+  transition-duration: 1s;
+}
+
+#msg {
+  color: green;
+}
+
+@media(max-width: 510px) {
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+}
